@@ -151,11 +151,13 @@ header {
         margin: 0;
         max-width: 100%;
         background: rgba(173, 255, 47, .95);
+        -webkit-clip-path: circle(0px at top left);
         clip-path: circle(0px at top left);
-        transition: clip-path ease-in-out 700ms;
+        transition: -webkit-clip-path ease-in-out 700ms, clip-path ease-in-out 700ms;
     }
 
     #main-navigation.open {
+        -webkit-clip-path: circle(250% at top left);
         clip-path: circle(250% at top left);
     }
 
